@@ -50,21 +50,41 @@ button {
 .container-card {
     display: flex;
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
     padding: 0 50px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .card-style {
-    width: 200px;
+    width: 210px;
     position: relative;
     /* background-color: blue; */
-    height: 273px;
+    height: 283px;
+    background-size: cover;
     background-color: aliceblue;
     background-image: url('/img/card.jpg');
     margin: 0 0 25px 0;
     cursor: pointer;
+}
+
+.card-six {
+    width: 150px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: round;
+}
+
+.card-eight {
+    width: 120px;
+    height: 160px;
+    background-repeat: round;
+}
+
+.card-ten {
+    width: 100px;
+    height: 130px;
+    background-repeat: round;
 }
 
 .open-card {
@@ -120,6 +140,7 @@ button {
     /* background-color: black; */
     width: 100px;
     height: 80px;
+    z-index: 10;
     align-self: flex-start;
     top: 50px;
     left: 10%;

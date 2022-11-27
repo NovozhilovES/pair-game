@@ -57,7 +57,6 @@
             let amountNumber = null;
             if(2 <= finishNumber <= 10 && finishNumber % 2 == 0) {
                 amountNumber = finishNumber**2;
-                //finishNumber * 2
             } else {
                 amountNumber = 4**2;
             }
@@ -95,6 +94,7 @@
         function scatterNumber() {
             const findCard = document.querySelectorAll('.card-style');
             shuffle(finishedArray);
+            const getNumberOfCard = Math.sqrt(finishedArray.length);
             let i = -1;
             findCard.forEach(item => {
                 const createNumber = document.createElement('p');
@@ -102,6 +102,13 @@
                 item.append(createNumber);
                 i++;
                 createNumber.textContent = finishedArray[i];
+                if(getNumberOfCard == 6) {
+                    item.classList.add('card-six');
+                } else if (getNumberOfCard == 8) {
+                    item.classList.add('card-eight');
+                } else if (getNumberOfCard == 10) {
+                    item.classList.add('card-ten');
+                }
                 checkCard();
             });
             console.log(finishedArray);
@@ -153,7 +160,7 @@
 
         function timerGame() {
             const timerCountdown = document.querySelector('.timer-style');
-            timerCountdown.textContent = '160';
+            timerCountdown.textContent = '960';
             timer = setInterval(() => {
                 if(timerCountdown.textContent > 0) {
                     timerCountdown.textContent -=1;
