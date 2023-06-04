@@ -111,7 +111,6 @@
                 }
                 checkCard();
             });
-            console.log(finishedArray);
         }
 
         function checkCard() {
