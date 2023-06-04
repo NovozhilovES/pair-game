@@ -1,5 +1,5 @@
 body {
-    background-image: url('/img/body_background.png');
+    background-image: url('./img/body_background.png');
     background-size: cover;
     position: relative;
 }
@@ -19,7 +19,7 @@ input {
 
 button {
     margin: 0 0 10px 0;
-    
+
 }
 
 input:focus {
@@ -63,7 +63,7 @@ button {
     height: 283px;
     background-size: cover;
     background-color: aliceblue;
-    background-image: url('/img/card.jpg');
+    background-image: url('./img/card.jpg');
     margin: 0 0 25px 0;
     cursor: pointer;
 }
@@ -94,7 +94,7 @@ button {
     transition: background-image, ease-in-out, .5s, opacity, ease-in-out, .5s;
     pointer-events: none;
 }
- 
+
 .open-card > .card-number-style {
     width: 100%;
     text-align: center;
