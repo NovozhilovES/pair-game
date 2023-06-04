@@ -135,8 +135,8 @@
                             result.splice(1,2);
                         }
                     }
-                    finishGame();    
-                });   
+                    finishGame();
+                });
             }
         }
         createCard();
@@ -160,7 +160,7 @@
 
         function timerGame() {
             const timerCountdown = document.querySelector('.timer-style');
-            timerCountdown.textContent = '960';
+            timerCountdown.textContent = '60';
             timer = setInterval(() => {
                 if(timerCountdown.textContent > 0) {
                     timerCountdown.textContent -=1;
